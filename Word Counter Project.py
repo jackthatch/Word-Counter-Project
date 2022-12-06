@@ -39,7 +39,6 @@ def sortDict(x):           ##Passing in our dictionary of key values
 
     for ele in sortedKeys:
         sortedDict[ele] = x[ele]
-    
 
     return (sortedDict)
 
@@ -52,7 +51,6 @@ def topWords(x):            ##Create new dictionary of top 25 terms in the dicti
     while len(newTopWordsList) < 25:
         newTopWordsList.append(topWordsList[i])
         i += 1
-        
 
     return newTopWordsList
 
@@ -68,27 +66,16 @@ def plotGraph(list):
     plt.grid()
     plt.show()
 
-
-
-
-
+    
 newDictionary = createDictionary(fileHandling())
-
 keyInfoDict = keyInfo(newDictionary)
-
 sortedKeyDict = sortDict(keyInfoDict)
-
 topWordsList = topWords(sortedKeyDict)
-
 print(topWordsList)
-
 plotGraph(topWordsList)
-
 
 ## Possbile improvements: display what % a take up in the entire document
 ## Take in more than one file
 ## Allow users to choose how many key words to display
-
-
 
 
