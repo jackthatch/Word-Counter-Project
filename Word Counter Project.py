@@ -74,7 +74,7 @@ topWordsList = topWords(sortedKeyDict)
 print(topWordsList)
 plotGraph(topWordsList)
 
-## Possbile improvements: display what % a take up in the entire document
+## Possible improvements: display what % a take up in the entire document
 ## Take in more than one file
 ## Allow users to choose how many key words to display
 
